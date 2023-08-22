@@ -1,0 +1,11 @@
+{
+  "name": "serhii_shevchenko_portfolio",
+  "version": "1.0.0",
+  "description": "**Read in other languages: [Русский](README.md), [Polska](README.pl.md),\r [English](README.en.md), [Spanish](README.es.md).**",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

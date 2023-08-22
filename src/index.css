@@ -1,0 +1,76 @@
+/* @import url('https://fonts.googleapis.com/css?family=Montserrat:regular,bold,medium,medium regular,semiBold regular,extrabold,semibold,black&subset=latin,latin-ext'); */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap');
+/* @import-normalize; bring in normalize.css styles */
+/* @import '../node_modules/modern-normalize/modern-normalize.css'; */
+
+:root{
+  
+  --bg-header: #0c0e30;  
+  --bg-main:  #0464e5c9;
+  --bg-footer: #0c0e30;
+  --button: #3131ff;
+  --logo: #bbbbbb;
+  --logo-shadow: #685fff;
+  --social-bg: #3132fd;
+  --social-shadow: #2b267f70;
+  --text-button:  #ffffff;
+  --main-text: #ffffff;
+}
+
+/* code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+} */
+
+
+
+/* html {
+  font-size: 10px;
+  height: 100%;
+  font-family: 'Montserrat', sans-serif;
+} */
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* background-color: var(--main-color); */
+  font-family: 'Montserrat', sans-serif;
+}
+
+ul {
+  list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+h1,
+h2,
+h3,
+h4,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+}
+a {
+  text-decoration: none;
+}
+img,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.noscroll {
+  overflow: hidden;
+}

@@ -1,0 +1,145 @@
+.about {
+  padding: 0 20px;
+  color: var(--main-text);
+  background-color: var(--bg-main);
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.5),
+      rgba(47, 48, 58, 0.5)
+    ),
+    url(../../images/fon/fon-01-jpg.jpg);
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 100px 0 80px;
+}
+
+.about_wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 70px 85px;
+}
+
+.title {
+  font-size: 22px;
+  margin: 20px 0;
+
+  font-weight: normal;
+  text-align: center;
+  text-shadow: 7px 7px 3px #1e185054;
+}
+
+.text {
+  margin-top: 12px;
+  margin-bottom: 34px;
+  font-weight: lighter;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-shadow: 7px 7px 3px #1e1850b5;
+}
+
+.about_wrapper img {
+  border-radius: 8px;
+  box-shadow: 11px 19px 25px 4px rgb(0 0 0 / 45%);
+}
+
+.ownProject {
+  margin-top: 10px;
+  margin-bottom: 14px;
+}
+
+.about_imgTop {
+  width: 100%;
+  margin-top: -17px;
+  border-radius: 8px;
+  box-shadow: 11px 19px 25px 4px rgb(0 0 0 / 45%);
+}
+
+/* ========= 768 ==========*/
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 600px;
+    padding: 120px 0 80px;
+  }
+
+  .about_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .aboutText {
+    width: 256px;
+  }
+
+  .title {
+    font-size: 16px;
+    text-align: left;
+  }
+
+  .text {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+  }
+
+  .about_img {
+    width: 250px;
+  }
+
+  .ownProject {
+    margin-bottom: 5px;
+  }
+}
+
+/* ========= 1280 ==========*/
+
+@media screen and (min-width: 1280px) {
+  .container {
+    max-width: 950px;
+    padding: 140px 0 100px;
+  }
+
+  .about_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    gap: 75px 124px;
+  }
+
+  .aboutText {
+    width: 413px;
+  }
+
+  .title {
+    font-size: 22px;
+    font-weight: normal;
+  }
+
+  .text {
+    font-size: 18px;
+    margin-bottom: 40px;
+  }
+
+  .about_img {
+    width: 390px;
+  }
+
+  .about_imgTopFirst {
+    margin-top: 71px;
+  }
+
+  /* .text_img {
+    width: 400px;
+  } */
+
+  .ownProject {
+    margin-bottom: 46px;
+  }
+
+  .about_imgSecond {
+    margin-top: 73px;
+  }
+}

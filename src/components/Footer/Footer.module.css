@@ -1,0 +1,159 @@
+.footer {
+  text-align: center;
+  color: var(--main-text);
+  background-color: var(--bg-footer);
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.footerSocial {
+  margin-top: 30px;
+  margin-bottom: 45px;
+}
+
+.pageFooter {
+  padding: 60px 0;
+  background-color: #2f303a;
+}
+
+.pageFooter__box {
+  justify-content: flex-start;
+  align-items: baseline;
+}
+
+.logo {
+  display: inline-block;
+  margin-top: 30px;
+  letter-spacing: 0.03em;
+  color: var(--logo);
+
+  font-size: 16px;
+
+  font-weight: normal;
+  line-height: 28px;
+  text-decoration: none;
+
+  text-shadow: 0px 0px 18px var(--logo-shadow);
+
+  /*  */
+  border-top: 5px solid #005ff36b;
+  padding: 0px 8px;
+
+  border-top-left-radius: 100%;
+}
+
+.pageFooter__link {
+  margin-top: 20px;
+}
+
+.pageFooter__links {
+  font-style: normal;
+  font-weight: lighter;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+}
+
+.footerSocial__slogan {
+  margin-bottom: 20px;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+
+  color: var(--main-text);
+}
+
+.flexy {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.socialRow__icon:not(:last-child) {
+  margin-right: 15px;
+}
+
+.socialRow__link {
+  display: flex;
+  align-items: center;
+
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  color: var(--main-text);
+
+  cursor: pointer;
+
+  transition: 1s;
+}
+
+.socialRow__link:hover,
+.socialRow__link:focus {
+  background-color: var(--social-bg);
+  box-shadow: 0px 0px 20px 12px var(--social-shadow);
+
+  transform: scale(1.1);
+
+  transition: 0.25s;
+}
+
+.socialRow__linkWhite {
+  fill: #ffffff;
+}
+
+.copyright {
+  display: flex;
+
+  margin-bottom: 10px;
+  color: #ffffff80;
+  font-size: 14px;
+  font-weight: lighter;
+}
+
+/* ========= 768 ==========*/
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 700px;
+  }
+
+  .footerBox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .logo {
+    font-size: 22px;
+  }
+}
+
+/* ========= 1280 ==========*/
+@media screen and (min-width: 1280px) {
+  .container {
+    max-width: 1000px;
+  }
+
+  .footerBox {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-between;
+  }
+
+  .pageFooter__links {
+    font-size: 18px;
+  }
+
+  .footerSocial__slogan {
+    font-size: 20px;
+  }
+}

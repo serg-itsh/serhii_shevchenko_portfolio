@@ -1,0 +1,212 @@
+.portfolio {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  color: var(--main-text);
+
+  background-color: var(--bg-main);
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.5),
+      rgba(47, 48, 58, 0.5)
+    ),
+    url(../../images/fon/fon-01-jpg.jpg);
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 100px 35px 40px;
+}
+
+.title {
+  font-size: 25px;
+  margin: 20px 0 30px;
+
+  font-weight: normal;
+  text-align: center;
+  text-shadow: 5px 7px 4px #000000;
+}
+
+.text {
+  font-size: 16px;
+  margin-bottom: 16px;
+  text-align: center;
+  font-weight: lighter;
+  text-shadow: 4px 5px 2px #000000;
+}
+
+.portfolioBox {
+  display: flex;
+  flex-direction: column;
+  gap: 56px;
+}
+
+.pictures {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.picturesImg {
+  display: inline-block;
+  width: 250px;
+  gap: 20px;
+
+  border-radius: 8px;
+
+  box-shadow: 5px 5px 7px 0px #080832a1;
+  transition: 0.5s;
+}
+
+.picturesImg:hover,
+.picturesImg:focus {
+  box-shadow: 12px 30px 13px 0px #08083287;
+  transform: scale(1.02);
+  transition: 0.25s;
+
+  cursor: pointer;
+}
+
+.tehnology {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tehnology_text {
+  font-size: 20px;
+
+  margin: 56px 0 30px;
+  text-align: center;
+  font-weight: lighter;
+  text-shadow: 4px 5px 2px #000000;
+}
+
+.icon {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  /* opacity: 0.7; */
+  gap: 0 15px;
+}
+
+.iconWidth {
+  width: 81px;
+  height: 82px;
+}
+
+.iconScale {
+  transition: 0.5s;
+}
+
+.iconScale:hover,
+.iconScale:focus {
+  /* opacity: 1; */
+  transform: scale(1.2) translate(0%, -10%);
+  transition: 0.5s;
+}
+
+.video_item {
+  margin-bottom: 30px;
+  width: 250px;
+
+  gap: 20px;
+  border-radius: 8px;
+  box-shadow: 5px 5px 7px 0px #080832a1;
+  transition: 0.5s;
+}
+
+.video_item:hover {
+  box-shadow: 12px 30px 13px 0px #08083270;
+  transform: scale(1.02);
+  transition: 0.25s;
+}
+
+/* ========= 768 ==========*/
+
+@media screen and (min-width: 768px) {
+  .container {
+    padding: 100px 88px 80px;
+  }
+
+  .title {
+    margin: 30px 0;
+  }
+
+  .portfolioBox {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    gap: 36px 75px;
+  }
+
+  .picturesImg {
+    margin-bottom: 0;
+  }
+
+  .tehnology_text {
+    font-size: 24px;
+    margin: 56px 0 29px;
+  }
+
+  .icon {
+    grid-template-columns: repeat(6, 1fr);
+    gap: 0;
+  }
+
+  .iconWidth {
+    width: 81px;
+    height: 82px;
+  }
+}
+
+/* ========= 1280 ==========*/
+
+@media screen and (min-width: 1280px) {
+  .container {
+    width: 1000px;
+    padding: 120px 208px 80px;
+  }
+
+  .title {
+    font-size: 34px;
+    margin: 30px 0;
+  }
+
+  .portfolioBox {
+    gap: 36px 175px;
+  }
+
+  .text {
+    margin-bottom: 20px;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .picturesImg {
+    margin-bottom: 30px;
+    width: 324px;
+    gap: 50px;
+  }
+
+  .video_item {
+    width: 283px;
+  }
+
+  .tehnology_text {
+    font-size: 30px;
+    margin: 56px 0 35px;
+  }
+
+  .icon {
+    gap: 36px;
+  }
+
+  .iconWidth {
+    width: 78px;
+    height: 113px;
+  }
+}

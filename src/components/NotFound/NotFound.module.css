@@ -1,0 +1,61 @@
+.notFound {
+  height: 100vh;
+
+  color: var(--main-text);
+  background-color: var(--bg-main);
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.5),
+      rgba(47, 48, 58, 0.5)
+    ),
+    url(../../images/fon/fon-01-jpg.jpg);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.title {
+  font-size: 25px;
+  font-weight: normal;
+
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-shadow: 7px 7px 3px #181d50;
+}
+
+.video_item {
+  width: 100%;
+  border-radius: 50%;
+  box-shadow: 0px 0px 118px 26px rgb(0 42 98 / 59%);
+}
+
+/* ========= 768 ==========*/
+@media screen and (min-width: 768px) {
+  .container {
+    padding: 118px;
+  }
+
+  .title {
+    font-size: 40px;
+    padding-bottom: 30px;
+  }
+}
+
+/* ========= 1280==========*/
+
+@media screen and (min-width: 1280px) {
+  .container {
+    padding: 80px 235px;
+  }
+
+  .title {
+    font-size: 50px;
+    padding-bottom: 40px;
+  }
+}

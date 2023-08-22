@@ -1,0 +1,163 @@
+.home {
+  color: var(--main-text);
+  background-color: var(--bg-main);
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.5),
+      rgba(47, 48, 58, 0.5)
+    ),
+    url(../../images/fon/fon-01-jpg.jpg);
+}
+
+/* ==========video=========  */
+
+.fullScreen {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.fullScreen_body {
+  padding: 230px 20px;
+
+  background-color: #00000057;
+
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex: 1 1 auto;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+
+.fullScreen_title {
+  font-size: 30px;
+  text-align: center;
+
+  color: var(--main-text);
+  letter-spacing: 0.03em;
+  font-weight: lighter;
+  margin: 0 0 20px 0;
+}
+
+.fullScreen_text {
+  font-size: 19px;
+  font-weight: lighter;
+
+  color: var(--main-text);
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.fullScreen_video {
+  position: absolute;
+  /* position: fixed; */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ================ */
+
+.container {
+  /* position: relative;
+  z-index: 5; */
+
+  margin: 0 auto;
+  padding: 30px 20px 40px 20px;
+}
+
+.home img {
+  margin: 20px 0 40px;
+  width: 200px;
+  border-radius: 16px;
+  box-shadow: 11px 19px 25px 4px rgb(0 0 0 / 45%);
+}
+
+.title {
+  font-size: 25px;
+  font-weight: normal;
+
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-shadow: 7px 7px 3px #1e185054;
+}
+
+.text {
+  font-size: 16px;
+  font-weight: lighter;
+  padding-bottom: 20px;
+
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  text-shadow: 7px 7px 3px #1e1850b5;
+}
+
+/* ========= 768 ==========*/
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+  }
+  /* 
+  .fullScreen {  
+    min-height: 91vh;
+   
+  } */
+
+  .fullScreen_body {
+    padding: 250px 20px;
+  }
+
+  .fullScreen_title {
+    font-size: 36px;
+  }
+
+  .fullScreen_text {
+    font-size: 24px;
+  }
+
+  /* .home img {
+    width: 250px;
+  } */
+
+  .text {
+    font-size: 18px;
+  }
+}
+
+/* ========= 1280 ==========*/
+
+@media screen and (min-width: 1280px) {
+  .container {
+    width: 770px;
+    padding: 80px 0 100px;
+  }
+
+  /* .fullScreen {  
+    min-height: 92vh;
+  } */
+
+  .fullScreen_title {
+    font-size: 46px;
+  }
+
+  .fullScreen_text {
+    font-size: 32px;
+  }
+
+  .home img {
+    width: 350px;
+  }
+
+  .text {
+    font-size: 22px;
+  }
+}
