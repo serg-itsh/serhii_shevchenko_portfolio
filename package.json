@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "**Read in other languages: [Русский](README.md), [Polska](README.pl.md),\r [English](README.en.md), [Spanish](README.es.md).**",
   "main": "index.js",
+  "homepage": "https://serg-itsh.github.io/serhii_shevchenko_portfolio/",
 
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.3",
